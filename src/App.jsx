@@ -14,7 +14,7 @@ function App() {
 
   const handlePinSubmit = async (pin) => {
     try {
-        const response = await fetch(`http://localhost:3001/file/${pin}`);
+        const response = await fetch(`http://localhost:3000/file/${pin}`);
         if (!response.ok) {
             throw new Error('File not found for the given PIN.');
         }
